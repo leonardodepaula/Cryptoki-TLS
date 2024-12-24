@@ -1,0 +1,12 @@
+[package]
+name = "Cryptoki-TLS"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+cryptoki = "0.7.0"
+anyhow = "1.0.95"
+rustls = "0.23.20"
+hyper-rustls = "0.27.5"
+tokio = { version = "1.42.0",  features = ["full"] }
+reqwest = { version = "0.12.9", features = ["rustls-tls", "json"] }
